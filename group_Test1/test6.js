@@ -61,9 +61,11 @@ const Database1 = new Proxy(new function() {
         
         let temp_data = db.get();
         let table = temp_data[this.dataRequest.table];
+        
         let element = Object(table).entries().filter(([key, value]) => {
             return value[this.dataRequest.where] === this.dataRequest.where_value;
         });
+
         // let this_keys;
         // Object.entries(table).forEach(([key, value]) => {
         //     if (value[this.dataRequest.where] === this.dataRequest.where_value) {
@@ -85,14 +87,10 @@ const Database1 = new Proxy(new function() {
 
 
 
-
-
-
-
 // usar filter para buscar el id
 
 async function main(){
-    let query = Database1.users.name('tsurematsu').algo = "algo--->@gmail.com";
+    let query = Database1.users.name('tsurematsu').algo = "algo--->@gmail.com";    
     await query.wait();
 }
 

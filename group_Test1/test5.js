@@ -4,6 +4,7 @@ const db = {
         email: 'prueba@gg.com'
     }
 }
+
 async function main() {
     const usuario = new function () {
         let THIS_Resolve=null;
